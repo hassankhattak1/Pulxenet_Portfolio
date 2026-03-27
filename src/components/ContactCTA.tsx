@@ -8,8 +8,8 @@ export default function ContactCTA() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-2">
-            <div className="font-bebas text-4xl tracking-wide text-heading mb-6">
-              <span className="text-primary-light">Pulxe</span>net
+            <div className="mb-6">
+              <img src="/logo.png" alt="Pulxenet Logo" className="h-12 md:h-14 w-auto object-contain" />
             </div>
             <p className="text-paragraph max-w-sm">
               Empowering GCC enterprises with top-tier offshore IT delivery, Managed Services, and intelligent Cloud Solutions.

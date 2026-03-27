@@ -26,9 +26,9 @@ export default function NavBar() {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-card py-4 bg-white/90 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
-        <div className="text-3xl font-bebas tracking-wide text-heading flex items-center">
-          <span className="text-primary-light mr-1">Pulxe</span>net
-        </div>
+        <a href="#" className="flex items-center">
+          <img src="/logo.png" alt="Pulxenet Logo" className="h-10 md:h-12 w-auto object-contain" />
+        </a>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
