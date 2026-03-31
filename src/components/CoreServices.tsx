@@ -13,7 +13,7 @@ export default function CoreServices() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-24 cozy-section-bg">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-16 text-center md:text-left">
           <h2 className="text-sm font-bold tracking-widest text-subheading uppercase mb-3">Our Core Services</h2>
@@ -22,7 +22,7 @@ export default function CoreServices() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, idx) => (
-            <div key={idx} className="glass-card bg-slate-50 border border-gray-100 p-8 rounded-2xl group hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <div key={idx} className="cozy-card p-8 group">
               <div className="text-subheading mb-6 group-hover:text-primary transition-colors">
                 {service.icon}
               </div>

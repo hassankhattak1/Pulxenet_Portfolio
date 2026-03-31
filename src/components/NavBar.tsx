@@ -20,11 +20,12 @@ export default function NavBar() {
     { name: 'Services', href: '#services' },
     { name: 'Expertise', href: '#expertise' },
     { name: 'Process', href: '#process' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' }
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-card py-4 bg-white/90 shadow-sm' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed left-0 right-0 z-50 transition-all duration-500 ease-out ${isScrolled ? 'cozy-glass py-3 mx-4 md:mx-auto mt-4 max-w-7xl' : 'bg-transparent py-6 w-full'}`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
         <a href="#" className="flex items-center">
           <img src="/logo.png" alt="Pulxenet Logo" className="h-10 md:h-12 w-auto object-contain" />

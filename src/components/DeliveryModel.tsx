@@ -10,7 +10,7 @@ export default function DeliveryModel() {
   ];
 
   return (
-    <section id="process" className="py-24 bg-slate-50 rtl-override">
+    <section id="process" className="py-24 cozy-section-bg rtl-override">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-16 text-center">
           <h2 className="text-sm font-bold tracking-widest text-subheading uppercase mb-3">Our Methodology</h2>
@@ -31,7 +31,7 @@ export default function DeliveryModel() {
 
               {/* Content box */}
               <div className={`w-full md:w-5/12 ml-12 md:ml-0 ${idx % 2 === 0 ? 'md:pl-8 lg:pl-16 text-left' : 'md:pr-8 lg:pr-16 md:text-right'}`}>
-                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow">
+                <div className="cozy-card p-6">
                   <h4 className="font-bebas text-2xl text-subheading tracking-wide mb-2">{step.title}</h4>
                   <p className="text-paragraph">{step.text}</p>
                 </div>

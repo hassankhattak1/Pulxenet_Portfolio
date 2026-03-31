@@ -22,7 +22,7 @@ export default function TechExpertise() {
   ];
 
   return (
-    <section id="expertise" className="py-24 bg-slate-50 border-t border-gray-100">
+    <section id="expertise" className="py-24 cozy-section-bg border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-16 text-center">
           <h2 className="text-sm font-bold tracking-widest text-subheading uppercase mb-3">Our Toolkit</h2>
@@ -31,7 +31,7 @@ export default function TechExpertise() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((cat, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div key={idx} className="cozy-card p-6">
               <div className="flex items-center gap-3 mb-6">
                 <LayoutGrid className="text-subheading" />
                 <h4 className="font-bebas text-2xl text-heading tracking-wide pt-1">{cat.name}</h4>
