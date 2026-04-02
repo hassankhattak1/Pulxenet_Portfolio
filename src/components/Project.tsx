@@ -1,6 +1,8 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 
 export default function Project() {
+  const [activeTab, setActiveTab] = useState<'product' | 'projects'>('product');
   const featuredProject = {
     id: "pulzora",
     title: "Pulzora: Future of Pakistan's Tech Commerce",
@@ -60,13 +62,29 @@ export default function Project() {
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-primary/5 to-transparent rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-20 text-center">
+        <div className="mb-12 text-center">
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3 drop-shadow-sm">Projects</h2>
           <h3 className="font-bebas text-5xl md:text-7xl text-heading tracking-wide mb-6">Digital Ecosystems <br />& Innovations</h3>
-          {/* <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-subheading mx-auto rounded-full"></div> */}
+          
+          {/* Tabs */}
+          <div className="flex justify-center gap-4 mt-8">
+            <button
+              onClick={() => setActiveTab('product')}
+              className={`px-8 py-3 rounded-full font-bold transition-all ${activeTab === 'product' ? 'bg-primary text-white shadow-md' : 'bg-white text-heading border border-gray-200 hover:bg-gray-50'}`}
+            >
+              Product
+            </button>
+            <button
+              onClick={() => setActiveTab('projects')}
+              className={`px-8 py-3 rounded-full font-bold transition-all ${activeTab === 'projects' ? 'bg-primary text-white shadow-md' : 'bg-white text-heading border border-gray-200 hover:bg-gray-50'}`}
+            >
+              Projects
+            </button>
+          </div>
         </div>
 
         {/* Featured Project - Pulzora (Full Width) */}
+        {activeTab === 'product' && (
         <div className="mb-12 cozy-card p-1">
           <div className="bg-gradient-to-br from-white to-slate-50 rounded-[1.4rem] p-8 md:p-12 lg:flex gap-12 items-center relative overflow-hidden">
             {/* Soft decorative ring */}
@@ -114,8 +132,10 @@ export default function Project() {
             </div>
           </div>
         </div>
+        )}
 
         {/* 3-Column Grid for other projects */}
+        {activeTab === 'projects' && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {otherProjects.map((project, idx) => (
             <div key={idx} className="cozy-card p-8 group flex flex-col justify-between">
@@ -143,6 +163,7 @@ export default function Project() {
             </div>
           ))}
         </div>
+        )}
 
       </div>
     </section>

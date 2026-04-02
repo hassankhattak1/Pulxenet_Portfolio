@@ -439,6 +439,10 @@ img, video {
   margin-top: 1rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -936,6 +940,12 @@ img, video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.from-\[\#121212\] {
+  --tw-gradient-from: #121212 var(--tw-gradient-from-position);
+  --tw-gradient-to: #12121200 var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-primary {
   --tw-gradient-from: #025a61 var(--tw-gradient-from-position);
   --tw-gradient-to: #025a6100 var(--tw-gradient-to-position);
@@ -972,15 +982,13 @@ img, video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-\[\#121212\] {
-  --tw-gradient-from: #121212 var(--tw-gradient-from-position);
-  --tw-gradient-to: #12121200 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .via-subheading\/20 {
   --tw-gradient-to: #025a6100  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #025a6133 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-\[\#086E73\] {
+  --tw-gradient-to: #086e73 var(--tw-gradient-to-position);
 }
 
 .to-gray-100 {
@@ -997,10 +1005,6 @@ img, video {
 
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
-.to-\[\#086E73\] {
-  --tw-gradient-to: #086e73 var(--tw-gradient-to-position);
 }
 
 .object-contain {

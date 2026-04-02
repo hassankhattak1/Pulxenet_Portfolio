@@ -104,9 +104,9 @@ export default function Home() {
             <p className="font-poppins text-xl md:text-2xl text-paragraph mb-10 max-w-2xl mx-auto leading-relaxed">
               Pulxenet is your premier offshore partner for Managed IT Services, Cloud Solutions, and Custom Development.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#services" className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg">
-                Explore Our Services
+            <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+              <a href="https://www.pulxenet.com/" target="_blank" rel="noopener noreferrer" className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg">
+                View Website
               </a>
               <a href="#contact" className="bg-white hover:bg-gray-50 text-heading border border-gray-200 px-8 py-3.5 rounded-full font-bold shadow-sm hover:shadow transition-all">
                 Contact Us
